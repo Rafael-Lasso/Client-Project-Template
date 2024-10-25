@@ -18,8 +18,19 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 ul > a > li {
   margin-left: 15px;
+}
+
+h1::selection{
+  background-color: red;
+  color: white;
+}
+
+h2::selection{
+  background-color: red;
+  color: white;
 }
