@@ -1,0 +1,33 @@
+@media (max-width: 640px) {
+    #menu {
+        position: absolute;
+        top: 12vh;
+        bottom: 0;
+        right: 0;
+        width: 50vw;
+        height: 88vh;
+        background-color: rgb(40, 40, 40);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: #fff;
+        transform: translateX(100%);
+        transition: .4s ease-in-out;
+    }
+
+    #setMenu {
+        position: absolute;
+        top: 12vh;
+        bottom: 0;
+        right: 0;
+        width: 50vw;
+        height: 88vh;
+        background-color: rgb(40, 40, 40);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: #fff;
+        transform: translateX(0%);
+        transition: .6s ease-in-out;
+    }
+}

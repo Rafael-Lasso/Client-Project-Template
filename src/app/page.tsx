@@ -3,10 +3,23 @@ import Footer from "@/components/footer/footer";
 import Image from "next/image";
 
 import SealSevenDays from "../assets/img/Selo-de-Garantia-de-7-Dias.png";
+import StarRating from "../assets/img/star.png";
+import PlusButton from "../assets/img/plus.png";
+import WhatsappButton from "../assets/img/whatsapp-logo.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
+      <Link href={"/"}>
+        <Image
+          src={WhatsappButton}
+          width={55}
+          height={55}
+          alt="Whatsapp Button"
+          className="fixed top-85vh right-6 bottom-0"
+        />
+      </Link>
       <Navbar />
       <div className="w-100vw h-85vh bg-gray-300"></div>
 
@@ -31,7 +44,7 @@ export default function Home() {
       </section>
 
       <section className="flex justify-center items-center w-100vw h-85vh bg-gray-300 max-md:h-auto">
-        <div className="container-service flex flex-wrap flex-col justify-around items-center">
+        <div className="container-service flex flex-wrap flex-col justify-around items-center max-md:my-15vh">
           <div className="flex flex-col justify-around items-center my-7">
             <h1 className="font-bold text-center text-3xl">
               Why do we use it?
@@ -119,6 +132,186 @@ export default function Home() {
             <div className="w-80 h-80 bg-zinc-300"></div>
           </div>
         </div>
+      </section>
+
+      <section className="flex justify-center my-15vh">
+        <div className="container flex flex-wrap justify-around items-center">
+          <div className="container-text flex flex-col w-25vw items-start max-md:w-96 my-3.5">
+            <div className="flex">
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+            </div>
+            <h1 className="font-bold text-3xl">Page when looking at its</h1>
+            <h2 className="font-bold text-xs">26 Anos. São Paulo, São Paulo</h2>
+            <h3 className="text-start">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem
+            </h3>
+          </div>
+          <div className="container-text flex flex-col w-25vw items-start max-md:w-96 my-3.5">
+            <div className="flex">
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+            </div>
+            <h1 className="font-bold text-3xl">Page when looking at its</h1>
+            <h1 className="font-bold text-xs">26 Anos. São Paulo, São Paulo</h1>
+            <h2 className="text-start">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section className="flex justify-center items-center w-100vw h-85vh bg-slate-800 max-md:h-auto">
+        <div className="container-service flex flex-wrap flex-col justify-around items-center max-md:my-15vh">
+          <div className="flex flex-col justify-around items-center text-white my-7">
+            <h1 className="font-bold text-center text-3xl">
+              Why do we use it?
+            </h1>
+            <h2 className="text-center w-1/2">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem
+            </h2>
+          </div>
+          <div className="flex flex-wrap w-4/4 justify-center items-center">
+            <div className="flex justify-center items-center text-center w-48 h-48 bg-white my-4 max-w-[690px]: mx-4 hover:opacity-85 duration-150 ease-linear">
+              <h1 className="w-3/4 font-semibold">
+                Long established fact that a reader
+              </h1>
+            </div>
+            <div className="flex justify-center items-center text-center w-48 h-48 bg-white my-4 max-w-[690px]: mx-4 hover:opacity-85 duration-150 ease-linear">
+              <h1 className="w-3/4 font-semibold">
+                Long established fact that a reader
+              </h1>
+            </div>
+            <div className="flex justify-center items-center text-center w-48 h-48 bg-white my-4 max-w-[690px]: mx-4 hover:opacity-85 duration-150 ease-linear">
+              <h1 className="w-3/4 font-semibold">
+                Long established fact that a reader
+              </h1>
+            </div>
+            <div className="flex justify-center items-center text-center w-48 h-48 bg-white my-4 max-w-[690px]: mx-4 hover:opacity-85 duration-150 ease-linear">
+              <h1 className="w-3/4 font-semibold">
+                Long established fact that a reader
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="flex justify-center my-15vh">
+        <div className="container flex flex-wrap justify-around items-center">
+          <div className="container-text flex flex-col w-1/2 items-center max-md:my-3.5">
+            <h1 className="font-bold text-center text-3xl">
+              Page when looking at its
+            </h1>
+            <h2 className="text-center">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem
+            </h2>
+          </div>
+          <div className="container-image flex justify-center items-center ">
+            <div className="w-80 h-80 bg-zinc-300"></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="flex justify-center my-15vh">
+        <div className="container flex flex-wrap justify-around items-center">
+          <div className="container-text flex flex-col w-25vw items-start max-md:w-96 my-3.5">
+            <div className="flex">
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+            </div>
+            <h1 className="font-bold text-3xl">Page when looking at its</h1>
+            <h2 className="font-bold text-xs">26 Anos. São Paulo, São Paulo</h2>
+            <h3 className="text-start">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem
+            </h3>
+          </div>
+          <div className="container-text flex flex-col w-25vw items-start max-md:w-96 my-3.5">
+            <div className="flex">
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+              <Image src={StarRating} width={25} height={25} alt="" />
+            </div>
+            <h1 className="font-bold text-3xl">Page when looking at its</h1>
+            <h1 className="font-bold text-xs">26 Anos. São Paulo, São Paulo</h1>
+            <h2 className="text-start">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section className="my-15vh">
+        <section className="flex justify-center my-15vh">
+          <div className="container flex flex-wrap justify-around items-center">
+            <div className="container-image flex justify-center items-center ">
+              <div className="w-80 h-80 bg-zinc-300"></div>
+            </div>
+            <div className="container-dropdown-menu flex flex-col w-1/2 items-center max-md:my-3.5">
+              <div className="dropdown-menu relative flex justify-center items-center w-50vw h-16 mt-3.5 border-2 border-gray-500 rounded-xl">
+                <h1 className="text-center">Comprei o curso, e agora?</h1>
+                <span className="absolute right-4 cursor-pointer p-2">
+                  <Image
+                    src={PlusButton}
+                    width={20}
+                    height={20}
+                    alt="button to open and close dropdown menu"
+                  />
+                </span>
+              </div>
+              <div className="dropdown-menu flex justify-center items-center w-50vw h-16 mb-3.5 border-4 border-green-500 rounded-xl">
+                <p className="text-center">
+                  Basta você acessar o seu e-mail que utilizou para se cadastrar
+                  no curso, te enviamos um e-mail de acesso.
+                </p>
+              </div>
+              <div className="dropdown-menu relative flex justify-center items-center w-50vw h-16 mt-3.5 border-2 border-gray-500 rounded-xl">
+                <h1 className="text-center">Quanto tempo de acesso?</h1>
+                <span className="absolute right-4 cursor-pointer p-2">
+                  <Image
+                    src={PlusButton}
+                    width={20}
+                    height={20}
+                    alt="button to open and close dropdown menu"
+                  />
+                </span>
+              </div>
+              <div className="dropdown-menu relative flex justify-center items-center w-50vw h-16 mt-3.5 border-2 border-gray-500 rounded-xl">
+                <h1 className="text-center">E se eu comprar e não gostar?</h1>
+                <span className="absolute right-4 cursor-pointer p-2">
+                  <Image
+                    src={PlusButton}
+                    width={20}
+                    height={20}
+                    alt="button to open and close dropdown menu"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
 
       <section className="flex flex-col items-center content-around justify-around my-15vh">

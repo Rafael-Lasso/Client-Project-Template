@@ -12,16 +12,23 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      width:{
+      inset: {
+        "15vh": "15vh",
+        "85vh": "85vh",
+      },
+      width: {
+        "15vw": "15vw",
         "25vw": "25vw",
         "50vw": "50vw",
         "100vw": "100vw",
       },
       height: {
+        "12vh": "12vh",
         "15vh": "15vh",
         "35vh": "35vh",
         "50vh": "50vh",
         "85vh": "85vh",
+        "100vh": "100vh",
       },
       margin: {
         "15vh": "15vh",
