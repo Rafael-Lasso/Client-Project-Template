@@ -83,7 +83,7 @@ const Footer = () => {
               Política de Privacidade
             </li>
             <li className="m-2 cursor-pointer hover:text-cyan-500 transition-all">
-              Sobre Nós
+              Atribuição
             </li>
             <li className="m-2 cursor-pointer hover:text-cyan-500 transition-all">
               Quem Somos

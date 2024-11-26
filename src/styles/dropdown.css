@@ -1,0 +1,106 @@
+.dropdown-menu {
+    position: absolute;
+    z-index: 01;
+}
+
+div>#dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s ease-in-out;
+    margin-bottom: 30px;
+}
+
+div>#setDropdown {
+    position: relative;
+    top: 8vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s ease-in-out;
+    margin-bottom: 75px;
+}
+
+div>#dropdown-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s ease-in-out;
+    margin-bottom: 30px;
+}
+
+div>#setDropdown-2 {
+    position: relative;
+    top: 8vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s ease-in-out;
+    margin-bottom: 75px;
+}
+
+div>#dropdown-3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s ease-in-out;
+    margin-bottom: 30px;
+}
+
+div>#setDropdown-3 {
+    position: relative;
+    top: 8vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s ease-in-out;
+    margin-bottom: 75px;
+}
+
+#dropdown>p {
+    display: none;
+}
+
+#dropdown-2>p {
+    display: none;
+}
+
+#dropdown-3>p {
+    display: none;
+}
+
+.dropdown {
+    transform: rotate(90deg);
+    transition: .3s ease-in-out;
+}
+
+.setDropdown {
+    transform: rotate(45deg);
+    transition: .3s ease-in-out;
+}
+
+.dropdown-2 {
+    transform: rotate(90deg);
+    transition: .3s ease-in-out;
+}
+
+.setDropdown-2 {
+    transform: rotate(45deg);
+    transition: .3s ease-in-out;
+}
+
+.dropdown-3 {
+    transform: rotate(90deg);
+    transition: .3s ease-in-out;
+}
+
+.setDropdown-3 {
+    transform: rotate(45deg);
+    transition: .3s ease-in-out;
+}

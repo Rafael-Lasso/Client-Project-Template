@@ -38,13 +38,13 @@ function Navbar() {
           <Link href="/">
             <li className="hover:opacity-80 ease-in-out ">Home</li>
           </Link>
-          <Link href="/">
+          <Link href="/Project">
             <li className="hover:opacity-80 ease-in-out ">Project</li>
           </Link>
-          <Link href="/">
+          <Link href="/Services">
             <li className="hover:opacity-80 ease-in-out ">Services</li>
           </Link>
-          <Link href="/">
+          <Link href="/About">
             <li className="hover:opacity-80 ease-in-out ">About Us</li>
           </Link>
         </ul>

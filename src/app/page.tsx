@@ -1,12 +1,15 @@
+import Link from "next/link";
+
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 import Image from "next/image";
+import Dropdown from "@/components/dropdown/dropdown";
 
 import SealSevenDays from "../assets/img/Selo-de-Garantia-de-7-Dias.png";
 import StarRating from "../assets/img/star.png";
-import PlusButton from "../assets/img/plus.png";
 import WhatsappButton from "../assets/img/whatsapp-logo.png";
-import Link from "next/link";
+import ImageEmpty from "../assets/img/Image Space.png";
+import ImageEmpty2 from "../assets/img/ImageEmpity.png";
 
 export default function Home() {
   return (
@@ -17,11 +20,17 @@ export default function Home() {
           width={55}
           height={55}
           alt="Whatsapp Button"
-          className="fixed top-85vh right-6 bottom-0"
+          className="fixed top-85vh right-6 bottom-0 z-10"
         />
       </Link>
       <Navbar />
-      <div className="w-100vw h-85vh bg-gray-300"></div>
+      {/* <div className="w-100vw h-85vh bg-gray-300"></div> */}
+      <Image
+        src={ImageEmpty2}
+        width={1980}
+        height={720}
+        alt="Website Banner"
+      />
 
       <section className="flex flex-col items-center content-around justify-around my-15vh">
         <div className="container-service flex flex-wrap flex-col justify-around items-center h-auto">
@@ -101,7 +110,8 @@ export default function Home() {
       <section className="flex justify-center my-15vh">
         <div className="container flex flex-wrap justify-around items-center">
           <div className="container-image flex justify-center items-center ">
-            <div className="w-80 h-80 bg-zinc-300"></div>
+            {/* <div className="w-80 h-80 bg-zinc-300"></div> */}
+            <Image src={ImageEmpty} width={520} height={520} alt="Image" />
           </div>
           <div className="container-text flex flex-col w-1/2 items-center max-md:my-3.5">
             <h1 className="font-bold text-center text-3xl">
@@ -129,7 +139,8 @@ export default function Home() {
             </h2>
           </div>
           <div className="container-image flex justify-center items-center ">
-            <div className="w-80 h-80 bg-zinc-300"></div>
+            {/* <div className="w-80 h-80 bg-zinc-300"></div> */}
+            <Image src={ImageEmpty} width={520} height={520} alt="Image" />
           </div>
         </div>
       </section>
@@ -221,7 +232,8 @@ export default function Home() {
             </h2>
           </div>
           <div className="container-image flex justify-center items-center ">
-            <div className="w-80 h-80 bg-zinc-300"></div>
+            {/* <div className="w-80 h-80 bg-zinc-300"></div> */}
+            <Image src={ImageEmpty} width={520} height={520} alt="Image" />
           </div>
         </div>
       </section>
@@ -263,56 +275,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="my-15vh">
-        <section className="flex justify-center my-15vh">
-          <div className="container flex flex-wrap justify-around items-center">
-            <div className="container-image flex justify-center items-center ">
-              <div className="w-80 h-80 bg-zinc-300"></div>
-            </div>
-            <div className="container-dropdown-menu flex flex-col w-1/2 items-center max-md:my-3.5">
-              <div className="dropdown-menu relative flex justify-center items-center w-50vw h-16 mt-3.5 border-2 border-gray-500 rounded-xl">
-                <h1 className="text-center">Comprei o curso, e agora?</h1>
-                <span className="absolute right-4 cursor-pointer p-2">
-                  <Image
-                    src={PlusButton}
-                    width={20}
-                    height={20}
-                    alt="button to open and close dropdown menu"
-                  />
-                </span>
-              </div>
-              <div className="dropdown-menu flex justify-center items-center w-50vw h-16 mb-3.5 border-4 border-green-500 rounded-xl">
-                <p className="text-center">
-                  Basta você acessar o seu e-mail que utilizou para se cadastrar
-                  no curso, te enviamos um e-mail de acesso.
-                </p>
-              </div>
-              <div className="dropdown-menu relative flex justify-center items-center w-50vw h-16 mt-3.5 border-2 border-gray-500 rounded-xl">
-                <h1 className="text-center">Quanto tempo de acesso?</h1>
-                <span className="absolute right-4 cursor-pointer p-2">
-                  <Image
-                    src={PlusButton}
-                    width={20}
-                    height={20}
-                    alt="button to open and close dropdown menu"
-                  />
-                </span>
-              </div>
-              <div className="dropdown-menu relative flex justify-center items-center w-50vw h-16 mt-3.5 border-2 border-gray-500 rounded-xl">
-                <h1 className="text-center">E se eu comprar e não gostar?</h1>
-                <span className="absolute right-4 cursor-pointer p-2">
-                  <Image
-                    src={PlusButton}
-                    width={20}
-                    height={20}
-                    alt="button to open and close dropdown menu"
-                  />
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
+      <Dropdown />
 
       <section className="flex flex-col items-center content-around justify-around my-15vh">
         <div className="container-service flex flex-wrap flex-col justify-around items-center h-auto">
